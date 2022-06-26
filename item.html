@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/item.css">
+
+    <title>商品頁面</title>
+</head>
+
+<body>
+    <header>
+        <div class="link-bar">
+            <div class="link-left">
+                <a href="announcement.html" class="announcement">公告</a>
+                <a href="customer-service.html" class="customer-service">客服中心</a>
+            </div>
+            <div class="link-right">
+                <a href="sign-up.html">註冊</a>
+                <a href="sign-in.html">登入</a>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <h1 class="logo"><a href="index.html"><img src="./images/購物logo.png" alt=""></a></h1>
+            <div class="search">
+                <input type="search" class="search-bar" placeholder="搜尋商品">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <figure class="shopping"><img src="./images/購物.png" alt=""></figure>
+            <div class="sns">
+                <a href="" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>購物車</p>
+                </a>
+                <a href="" class="message">
+                    <i class="fa-solid fa-message"></i>
+                    <p>賣場對話</p>
+                </a>
+                <a href="" class="account">
+                    <i class="fa-solid fa-user"></i>
+                    <p>我的帳號</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="commodity">
+        <div class="container mt-5">
+            <div class="carousel-container position-relative row">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-slide-number="0">
+                            <img src="./images/item4.jpg" class="d-block w-100" alt="..."
+                                data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image"
+                                data-toggle="lightbox" data-gallery="example-gallery">
+                        </div>
+                        <div class="carousel-item" data-slide-number="1">
+                            <img src="./images/item0.jpg" class="d-block w-100" alt="..."
+                                data-remote="https://source.unsplash.com/tXqVe7oO-go/" data-type="image"
+                                data-toggle="lightbox" data-gallery="example-gallery">
+                        </div>
+                        <div class="carousel-item" data-slide-number="2">
+                            <img src="./images/item1.jpg" class="d-block w-100" alt="..."
+                                data-remote="https://source.unsplash.com/qlYQb7B9vog/" data-type="image"
+                                data-toggle="lightbox" data-gallery="example-gallery">
+                        </div>
+                    </div>
+                    <!-- Carousel Navigation -->
+                    <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row mx-0">
+                                    <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected"
+                                        data-target="#myCarousel" data-slide-to="0">
+                                        <img src="./images/item4.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                    <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2"
+                                        data-target="#myCarousel" data-slide-to="1">
+                                        <img src="./images/item0.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                    <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2"
+                                        data-target="#myCarousel" data-slide-to="2">
+                                        <img src="./images/item1.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-2 px-1 py-2"></div>
+                                    <div class="col-2 px-1 py-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div> <!-- /row -->
+            </div> <!-- /container -->
+            <!-- partial -->
+        </div>
+        <!-- item-content -->
+        <div class="content">
+            <p class="title">資訊大歷史：人類如何消除對未知的不確定</p>
+            <span>獨樹一幟的史觀和理論解讀兩百年資訊史</span>
+            <hr>
+            <h3 class="price">
+                <p class="number">437</p>
+                <p class="NTU">元</p>
+            </h3>
+            <hr>
+            <div class="sale">金幣最高５倍回饋可100%折抵</div>
+            <hr>
+            <div class="author">
+                <p>作者：<a href="https://www.facebook.com/zhangting.xu/">洛墨</a></p>
+                <p>出版社：<a href="">藍色玫瑰</a></p>
+                <p>出版日期：2022/6/25</p>
+            </div>
+            <hr>
+            <div class="totle">
+                <input id="min" name="" type="button" value="-" />
+                <input id="quantity" name="" type="text" value="1" />
+                <input id="add" name="" type="button" value="+" />
+                <p>總價：<label id="total"></label></p>
+            </div>
+        </div>
+    </section>
+    <section class="tab">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">商品說明</a></li>
+                <li><a href="#tabs-2">問與答</a></li>
+                <li><a href="#tabs-3">商品評價</a></li>
+                <li><a href="#tabs-4">購買人次</a></li>
+            </ul>
+            <div id="tabs-1">
+                <video class="video" src="./images/Flower-31953.mp4" autoplay muted loop></video>
+                <div class="feature">
+                    <p>特色</p>
+                    <ul>
+                        <li>可調整導輪高度，適用於24吋~29吋單車。</li>
+                        <li>適用胎寬9公分以內的輪胎。</li>
+                        <li>輕鬆牽行將車子帶入，即可完成駐車。</li>
+                        <li>固定前輪或後輪均可。</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <p>規格</p>
+                    <ul>
+                        <li>材質：金屬、塑膠</li>
+                        <li>尺寸：高89cm、底座長43cm*寬45cm</li>
+                        <li>重量：2.1kg</li>
+                        <li>顏色：隨機出貨 (缺貨時以現有庫存顏色出貨，恕不另行通知)</li>
+                        <li>產地：台灣製造</li>
+                    </ul>
+                </div>
+                <figure class="picture">
+                    <img src="./images/item5.jpg" alt="">
+                    <img src="./images/item8.jpg" alt="">
+                    <img src="./images/item6.jpg" alt="">
+                </figure>
+            </div>
+            <div id="tabs-2">
+                <h1>問與答</h1>
+                <p>買家帳號</p>
+                <input type="text" id="title" />
+                <p>問題</p>
+                <textarea id="content" rows="80"></textarea>
+                <button id="btn">發布</button>
+                <div id="list"></div>
+            </div>
+            <div id="tabs-3">
+                <div class="container">
+                    <table id="table_id" class="display compact hover cell-border stripe responsive nowrap">
+                        <thead>
+                            <tr>
+                                <!-- 欄位標題 -->
+                                <th width="10px">ID</th>
+                                <th>帳號</th>
+                                <th>評價</th>
+                                <th>回覆</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 資料內容 -->
+                            <tr>
+                                <td>1</td>
+                                <td>陳阿其</td>
+                                <td>⭐⭐⭐</td>
+                                <td>東西真的不錯耶...我好喜歡，謝謝啊~~</td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>林小德</td>
+                                <td>⭐⭐⭐⭐</td>
+                                <td>謝謝，交易愉快！！希望還有機會跟您買東西...</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>王大明</td>
+                                <td>⭐⭐⭐⭐</td>
+                                <td>贊!好用!所以連續買兩台希望有機會再向您交關…</td>
+
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>張小婷</td>
+                                <td>⭐⭐⭐</td>
+                                <td>贊!好用！東西很滿意希望有機會再向您交關…</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>林小小</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                                <td>專業.用心服務的好賣家!!!</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>王小明</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                                <td>東西好.交貨快的好賣家!!!歡迎大家到他的賣場逛逛...</td>
+
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>張寧婷</td>
+                                <td>⭐⭐</td>
+                                <td>贊!好用！東西很滿意希望有機會再向您交關…</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>林大德</td>
+                                <td>⭐⭐⭐⭐</td>
+                                <td>專業.用心服務的好賣家!!!</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>王大煌</td>
+                                <td>⭐⭐⭐⭐</td>
+                                <td>謝謝，交易愉快！！希望還有機會跟您買東西...</td>
+
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>張方婷</td>
+                                <td>⭐⭐⭐⭐</td>
+                                <td>東西真的不錯耶...我好喜歡，謝謝啊~~</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>林安德</td>
+                                <td>⭐⭐⭐</td>
+                                <td>謝謝，交易愉快！！希望還有機會跟您買東西...</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>王大兒</td>
+                                <td>⭐⭐</td>
+                                <td>專業.用心服務的好賣家!!!</td>
+
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>安小婷</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                                <td>專業.用心服務的好賣家!!!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="tabs-4">
+                <table id="myTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>帳號</th>
+                            <th>數量</th>
+                            <th>時間</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myBody">
+                        <tr>
+                            <td>1</td>
+                            <td>陳*奇</td>
+                            <td>3</td>
+                            <td>2022/06/25</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>李*珍</td>
+                            <td>1</td>
+                            <td>2022/03/05</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>賣*人</td>
+                            <td>2</td>
+                            <td>2021/12/30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </section>
+    <footer>
+        <hr>
+        <ul class="footer-nav">
+            <li><a href="">關於我們</a></li>
+            <li><a href="announcement.html">公佈欄</a></li>
+            <li><a href="quection.html">常見問題</a></li>
+            <li><a href="">會員條款</a></li>
+        </ul>
+        <div class="service">
+            <div class="service-box">
+                <p>
+                    客服專線：0970632989
+                    <br>
+                    服務時間：09：00~23：00
+                </p>
+                <span class="copyright">洛墨版權所有，翻印必究。copyright&copy;falling-ink</span>
+            </div>
+            <figure class="qrcode"><img src="./images/220526224711.png" alt=""></figure>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="./js/tabs-3.js"></script>
+    <script src="./js/tabs-4.js"></script>
+    <script src="./js/item.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+        var title = document.getElementById("title");      /* 設立變數title為取id為title者 */
+        var content = document.getElementById("content");  /* 設立變數content為取id為content者 */
+        var btn = document.getElementById("btn");          /* 設立變數btn為取id為btn者 */
+        var list = document.getElementById("list");        /* 設立變數list為取id為list者 */
+
+        btn.addEventListener("click", function () {          /* 變數btn增加事件監聽，當點擊時執行函式 */
+            list.innerHTML = list.innerHTML + `            
+    <div class = "article">
+        <h2>${title.value}</h2>
+        <p>${content.value}</p>
+    `;
+        })                                                 /* list的html內增加``內所寫程式碼 */
+
+    </script>
+</body>
+
+</html>

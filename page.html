@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/page.css">
+    <title>商場分頁</title>
+</head>
+
+<body>
+    <header>
+        <div class="link-bar">
+            <div class="link-left">
+                <a href="announcement.html" class="announcement">公告</a>
+                <a href="customer-service.html" class="customer-service">客服中心</a>
+            </div>
+            <div class="link-right">
+                <a href="sign-up.html">註冊</a>
+                <a href="sign-in.html">登入</a>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <h1 class="logo"><a href="index.html"><img src="./images/購物logo.png" alt=""></a></h1>
+            <div class="search">
+                <input type="search" class="search-bar" placeholder="搜尋商品">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <figure class="shopping"><img src="./images/購物.png" alt=""></figure>
+            <div class="sns">
+                <a href="" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>購物車</p>
+                </a>
+                <a href="" class="message">
+                    <i class="fa-solid fa-message"></i>
+                    <p>賣場對話</p>
+                </a>
+                <a href="" class="account">
+                    <i class="fa-solid fa-user"></i>
+                    <p>我的帳號</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="classification">
+            <h3><i class="fa-solid fa-filter"></i>條件篩選</h3>
+            <div class="box">
+                <h5>分類</h5>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">口罩</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">飾品精品</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">收納</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">娛樂、收藏</label>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                更多
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="checkbox hidden">
+                                    <input type="checkbox">
+                                    <label for="">醫療用品</label>
+                                </div>
+                                <div class="checkbox hidden">
+                                    <input type="checkbox">
+                                    <label for="">海外商品</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h5>出貨地點</h5>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">臺灣</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">海外</label>
+                </div>
+            </div>
+            <div class="box">
+                <h5>運送方式</h5>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">7-11</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">全家</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">冷凍</label>
+                </div>
+            </div>
+            <div class="box">
+                <h5>品牌</h5>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">3M</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">JOJO</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="">D&M</label>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="advertise">
+                <div class="title">
+                    <h3 class="about">相關賣場</h3>
+                    <h4 class="more">查看更多<i class="fa-solid fa-angle-right"></i></h4>
+                </div>
+                <a href="item.html">
+                    <figure class="photo"><img src="./images/廣告.png" alt=""></figure>
+                </a>
+            </div>
+            <div class="looking-box">
+                <div class="filters">
+                    <h3>篩選</h3>
+                    <button class="button" data-filter=".all">綜合排名</button>
+                    <button class="button" data-filter=".new">最新</button>
+                    <button class="button" data-filter=".famous">最熱銷</button>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="card item famous items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item all items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item famous items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item famous items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item all items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item famous items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item famous items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item all items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item famous items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item famous items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item all items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item famous items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item new items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card item all items" style="width: 18rem;">
+                    <a href="item.html">
+                        <img src="./images/item2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="price">NT$60</p>
+                        <p class="card-text">記錄禮品專利，版本正是就是不明白推出男子並且收到照顧可以活力形成關西，</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <hr>
+        <ul class="footer-nav">
+            <li><a href="">關於我們</a></li>
+            <li><a href="announcement.html">公佈欄</a></li>
+            <li><a href="quection.html">常見問題</a></li>
+            <li><a href="">會員條款</a></li>
+        </ul>
+        <div class="service">
+            <div class="service-box">
+                <p>
+                    客服專線：0970632989
+                    <br>
+                    服務時間：09：00~23：00
+                </p>
+                <span class="copyright">洛墨版權所有，翻印必究。copyright&copy;falling-ink</span>
+            </div>
+            <figure class="qrcode"><img src="./images/220526224711.png" alt=""></figure>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./js/page.js"></script>
+</body>
+
+</html>

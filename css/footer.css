@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* eric reset end */
+
+body{
+    font-family: Arial,'黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei', Helvetica, sans-serif;
+    background-color: #C8C2CA;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-nav{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-nav li{
+    border-right: 1px solid #535A58;
+}
+
+.footer-nav li a{
+    margin: 15px;
+    color: #B288A5;
+}
+
+.footer-nav li:nth-child(4){
+    border-right: none;
+}
+
+footer p{
+    margin: 30px 200px;
+    line-height: 2rem;
+    color: #535A58;
+}
+
+.copyright{
+    margin: 30px 350px;
+    color: #535A58;
+}
+
+.service{
+    display: flex;
+    justify-content: space-between;
+}
+
+.qrcode{
+    width: 120px;
+    margin: 30px 350px;
+}
